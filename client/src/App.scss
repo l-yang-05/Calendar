@@ -1,0 +1,50 @@
+/* Mobile development! */
+/* 
+    Made the color dark so it would be lighter on the eyes
+    as I work. Feel free to change it.
+*/
+$purple: #3b136f; // this is how you create a vairable in scss
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: blueviolet;
+}
+
+@media only screen and (min-width: 0px){
+    header{ // this is instead of ( header h1 )
+        text-align: center;
+        h1{
+            margin: 0;
+        }
+    }
+    #date{
+        text-align: center;
+        .control{ // instead of #date .control
+            display: flex;
+            justify-content: space-around;
+            &-btn{ // insead of #date .control-btn
+                width: 80px;
+                height: 30px;
+                color: red;
+                background-color: $purple // this is how you can use a variable in scss
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 500px){
+    #date{
+        .control{
+            display: inline-block;
+        }
+    }
+    .comment{
+        padding: 10px 20%;
+    }
+}
+
