@@ -33,6 +33,8 @@ class App extends React.Component {
           <h1>Calendar</h1>
         </header>
         <section id="date">
+          <h3><a href="https://momentjs.com/docs/#/displaying/calendar-time/">Moment.js</a></h3>
+          <h3><a href="https://devhints.io/moment">Moment.js cheat sheet</a></h3>
           <h3>date: { date } </h3>
           <h3>current date: { currentDate }</h3>
           <h3>days in month: { this.daysInMoth(date) }</h3>
@@ -45,7 +47,8 @@ class App extends React.Component {
           You can change everything that you can see here but this should
           give you a general idea of how to do thing. Look at the classNames
           in control inside of scss. I used different tools that I hope you 
-          can find helpful to this project. 
+          can find helpful to this project. Sure to tell me how you want you data
+          from the api server.
         </h3>
       </div>
     );
